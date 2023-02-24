@@ -1,6 +1,6 @@
 import React from 'react'
 import { getClasses } from '../utils/getClasses'
-import styles from '../styles/modules/button.modules.scss'
+import styles from '../styles/modules/button.module.scss'
 
 const CustomBtn = ({ type, variant = 'primary', children, ...rest }) => {
   const btnColor = {

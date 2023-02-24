@@ -1,11 +1,12 @@
-// import { useState } from 'react'
+import { Toaster } from 'react-hot-toast'
 import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <h1>TODO Tickets</h1>
-    </div>
+      <Toaster position="top-right" />
+    </>
   )
 }
 
