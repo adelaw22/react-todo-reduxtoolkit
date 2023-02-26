@@ -24,12 +24,12 @@ const CustomBtn = ({ type, variant = 'primary', children, ...rest }) => {
 
 export function SelectBtn({ children, id, ...rest }) {
   return (
-    <button
+    <select
       className={getClasses([styles.button, styles.button__select])}
       {...rest}
     >
       {children}
-    </button>
+    </select>
   )
 }
 

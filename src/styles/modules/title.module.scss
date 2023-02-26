@@ -1,0 +1,9 @@
+@import '../mixins';
+
+.title{
+    font-size: 2rem;
+    color: var(--black-1);
+    text-align: center;
+    font-weight:700;
+    padding-block:2rem;
+}
