@@ -1,11 +1,23 @@
-import React from 'react'
-import CustomBtn, {SelectBtn} from '../componets/CustomBtn'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addTodo } from '../slices/todoSlice'
+import CustomBtn from './CustomBtn'
+import CustomInput from './CustomInput'
 
 const AppHeader = () => {
+  const dispatch = useDispatch()
+  const [inputValue, setInputValue] = useState('')
+
+  const handleChange = (e) => {
+    e.preventDefault
+      dispatch(addTodo(inputValue))
+    
+  }
+
   return (
     <>
-    <CustomBtn variant='primary'>Add Task</CustomBtn>
-    <SelectBtn>sldkjs</SelectBtn>
+    <CustomInput inputValue={inputValue} setInputValue={setInputValue}/>
+    <CustomBtn variant='primary' type='button' onClick={handleChange}>Add Task</CustomBtn>
     </>
   )
 }

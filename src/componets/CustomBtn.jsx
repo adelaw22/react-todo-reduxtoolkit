@@ -22,15 +22,4 @@ const CustomBtn = ({ type, variant = 'primary', children, ...rest }) => {
   )
 }
 
-export function SelectBtn({ children, id, ...rest }) {
-  return (
-    <select
-      className={getClasses([styles.button, styles.button__select])}
-      {...rest}
-    >
-      {children}
-    </select>
-  )
-}
-
 export default CustomBtn
