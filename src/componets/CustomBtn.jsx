@@ -2,10 +2,10 @@ import React from 'react'
 import { getClasses } from '../utils/getClasses'
 import styles from '../styles/modules/button.module.scss'
 
-const CustomBtn = ({ type, variant = 'primary', children, ...rest }) => {
+const CustomBtn = ({ type, variant, children, ...rest }) => {
   const btnColor = {
-    Primary: 'primary',
-    Secondary: 'secondary',
+    primary: 'primary',
+    secondary: 'secondary',
   }
 
   return (

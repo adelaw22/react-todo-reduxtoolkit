@@ -4,14 +4,6 @@
   max-width: 750px;
   width: 100%;
   margin: 0 auto;
-}
-.appHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-}
-.content__wrapper {
   background-color: var(--bg-2);
   padding: 2rem;
   border-radius: 12px;
@@ -19,6 +11,27 @@
     padding: 1.5rem;
   }
 }
+.appHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.appContent{
+ padding-block:1rem;
+}
+
+.card{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:var(--bg-1)
+}
+
 .emptyText {
   // display: inline-block;
   font-size: 1.6rem;

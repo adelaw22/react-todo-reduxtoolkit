@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { addTodo } from '../slices/todoSlice'
 import CustomBtn from './CustomBtn'
 import CustomInput from './CustomInput'
+import styles from '../styles/modules/app.module.scss'
 
 const AppHeader = () => {
   const dispatch = useDispatch()
@@ -15,10 +16,10 @@ const AppHeader = () => {
   }
 
   return (
-    <>
+    <div className={styles.appHeader}>
     <CustomInput inputValue={inputValue} setInputValue={setInputValue}/>
     <CustomBtn variant='primary' type='button' onClick={handleChange}>Add Task</CustomBtn>
-    </>
+    </div>
   )
 }
 
