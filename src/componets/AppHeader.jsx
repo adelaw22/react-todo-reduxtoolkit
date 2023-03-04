@@ -11,7 +11,7 @@ const AppHeader = () => {
   const handleChange = (e) => {
     e.preventDefault
       dispatch(addTodo(inputValue))
-    
+    setInputValue("")
   }
 
   return (
